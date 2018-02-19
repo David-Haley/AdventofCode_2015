@@ -10,6 +10,7 @@ procedure December_07 is
 
    Input_File, Output_File : File_Type;
    Program_Name : constant String := "Solution_07";
+   Source_File_Path : constant String := "..\Source\";
 
    type Word is new Unsigned_16;
 
@@ -258,7 +259,7 @@ procedure December_07 is
 
 begin -- December_07
    Open (Input_File, In_File, "20151207.txt");
-   Create (Output_File, Out_file, Program_Name & ".adb");
+   Create (Output_File, Out_file, Source_File_Path & Program_Name & ".adb");
    Put_Context (Output_File);
    -- first pass to build symbol table
    Build_Symbol_Table (Input_File, Symbol_Table);
