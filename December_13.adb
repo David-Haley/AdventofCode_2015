@@ -56,7 +56,7 @@ procedure December_13 is
    function "=" (Left, Right : Guests) return Boolean is
 
    begin -- "="
-      return Left.Name < Right.Name;
+      return Left.Name = Right.Name;
    end "=";
 
    function Guest_Name_Key (Element : Guests) return Unbounded_String is
