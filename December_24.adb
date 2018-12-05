@@ -11,7 +11,7 @@ procedure December_24 is
 
    Required_Weight, Total_Weight : Natural;
 
-   subtype Present_Indices is Natural range 0 .. 28; -- 20 Presents
+   subtype Present_Indices is Natural range 0 .. 28; -- 29 Presents
    subtype Present_Counts is Natural range 0 .. Present_Indices'Last +  1;
 
    Minimum_Presents : Present_Counts;
