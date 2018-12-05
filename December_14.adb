@@ -29,7 +29,7 @@ procedure December_14 is
    function "=" (Left, Right : Rein_Deers) return Boolean is
 
    begin -- "="
-      return Left.Name < Right.Name;
+      return Left.Name = Right.Name;
    end "=";
 
    function Rein_Deer_Name_Key (Element : Rein_Deers) return Unbounded_String is
